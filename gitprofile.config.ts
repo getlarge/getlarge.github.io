@@ -39,29 +39,28 @@ const CONFIG = {
       header: 'Speaking In Public',
       projects: [
         {
-          title:
-            'Vendure Conf 2024 - Building Single Executable Applications with Node.js',
-          description: '',
+          title: 'Vendure Conf 2024',
+          description: 'Building Single Executable Applications with Node.js.',
           imageUrl: 'https://img.youtube.com/vi/sqU1z09Gl58/0.jpg',
           link: 'https://youtube.com/watch?v=sqU1z09Gl58',
         },
         {
-          title:
-            'NestJS Vienna Meetup June 2024 - Authentication and Authorization strategies with NestJS and Ory',
-          description: '',
+          title: 'NestJS Vienna Meetup June 2024',
+          description:
+            'Authentication and Authorization strategies with NestJS and Ory.',
           imageUrl: 'https://img.youtube.com/vi/lJTVrOlFq9o/0.jpg',
           link: 'https://www.youtube.com/watch?v=lJTVrOlFq9o',
         },
         {
-          title: 'Angular Master Podcast - Scalable Architecture with Nx',
-          description: '',
+          title: 'Angular Master Podcast',
+          description: 'Scalable Architecture with Nx.',
           imageUrl: 'https://img.youtube.com/vi/OuGSrrdn-cA/0.jpg',
           link: 'https://www.youtube.com/watch?v=OuGSrrdn-cA',
         },
         {
-          title:
-            'ViennaJS Meetup June 2024 - Authentication and Authorization strategies with NestJS and Ory',
-          description: '',
+          title: 'ViennaJS Meetup June 2024',
+          description:
+            'Authentication and Authorization strategies with NestJS and Ory.',
           imageUrl:
             'https://secure.meetupstatic.com/photos/event/8/b/f/5/clean_489155829.webp',
           link: 'https://viennajs.org/en/meetup/viennajs-may-2024',
@@ -157,11 +156,10 @@ const CONFIG = {
   blog: {
     source: 'dev', // medium | dev
     username: 'getlarge', // to hide blog section, keep it empty
-    limit: 6, // How many articles to display. Max is 10.
+    limit: 8, // How many articles to display. Max is 10.
     header: 'Articles',
   },
   themeConfig: {
-    // defaultTheme: 'emerald',
     defaultTheme: 'procyon',
     // Hides the themes selector in the navbar
     disableSwitch: true,
@@ -216,9 +214,9 @@ const CONFIG = {
       secondary: '#219aaf',
       accent: '#e8d03a',
       neutral: '#2A2730',
-      'base-100': '#ffffff',
+      'base-100': '#FFFFFF',
       '--rounded-box': '1rem',
-      '--rounded-btn': '1rem',
+      '--rounded-btn': '0.3rem',
     },
   },
 
