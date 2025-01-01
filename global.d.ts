@@ -282,6 +282,11 @@ interface Blog {
    * Max is 10
    */
   limit?: number;
+
+  /**
+   * Header text
+   */
+  header?: string;
 }
 
 interface CustomTheme {

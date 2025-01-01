@@ -114,6 +114,7 @@ export interface SanitizedBlog {
   source: string;
   username: string;
   limit: number;
+  header: string;
 }
 
 export interface SanitizedCustomTheme {
