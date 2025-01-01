@@ -2,19 +2,19 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'getlarge',
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
-  base: '/gitprofile/',
+  base: '/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      display: true,
+      header: 'Public GitHub Projects',
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
@@ -25,41 +25,59 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: [
+          'getlarge/ticketing',
+          'getlarge/nestjs-tools',
+          'getlarge/nestjs-ory-integration',
+          'getlarge/cat-fostering',
+          'getlarge/nx-heroku',
+          'getlarge/node-sea-demo',
+        ],
       },
     },
     external: {
-      header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
+      header: 'Speaking In Public',
       projects: [
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          title:
+            'Vendure Conf 2024 - Building Single Executable Applications with Node.js',
+          description: '',
+          imageUrl: 'https://img.youtube.com/vi/sqU1z09Gl58/0.jpg',
+          link: 'https://youtube.com/watch?v=sqU1z09Gl58',
         },
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+          title:
+            'NestJS Vienna Meetup June 2024 - Authentication and Authorization strategies with NestJS and Ory',
+          description: '',
+          imageUrl: 'https://img.youtube.com/vi/lJTVrOlFq9o/0.jpg',
+          link: 'https://www.youtube.com/watch?v=lJTVrOlFq9o',
+        },
+        {
+          title: 'Angular Master Podcast - Scalable Architecture with Nx',
+          description: '',
+          imageUrl: 'https://img.youtube.com/vi/OuGSrrdn-cA/0.jpg',
+          link: 'https://www.youtube.com/watch?v=OuGSrrdn-cA',
+        },
+        {
+          title:
+            'ViennaJS Meetup June 2024 - Authentication and Authorization strategies with NestJS and Ory',
+          description: '',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://secure.meetupstatic.com/photos/event/8/b/f/5/clean_489155829.webp',
+          link: 'https://viennajs.org/en/meetup/viennajs-may-2024',
         },
       ],
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Edouard Maleix - Software Engineer',
     description: '',
-    imageURL: '',
+    imageURL: 'https://avatars.githubusercontent.com/u/15331923?v=4&size=64',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'edouard-maleix',
+    twitter: 'e_maleix',
+    mastodon: '',
     researchGate: '',
     facebook: '',
     instagram: '',
@@ -69,113 +87,84 @@ const CONFIG = {
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium: '',
+    dev: 'getlarge',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: '',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'ed@getlarge.eu',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
     'JavaScript',
-    'React.js',
+    'TypeScript',
     'Node.js',
-    'Nest.js',
-    'MySQL',
+    'NestJS',
+    'Nx',
     'PostgreSQL',
     'Git',
     'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'Heroku',
+    'AWS',
+    'Erlang',
+    'Go',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'Self-employed',
+      position: 'Freelance Software Engineer',
+      from: 'August 2023',
       to: 'Present',
-      companyLink: 'https://example.com',
+      companyLink: '',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'S1Seven | Metal Identity',
+      position: 'Lead Developer (Node.js)',
+      from: 'October 2020',
+      to: 'December 2023',
+      companyLink: 'https://s1seven.com',
+    },
+    {
+      company: 'Insticore',
+      position: 'Full-stack Javascript developper',
+      from: 'June 2020',
+      to: 'October 2020',
+      companyLink: 'https://insticore.com',
+    },
+    {
+      company: 'CUBE Software- und Hotelprojektierungs GmbH',
+      position: 'Full-stack Javascript developper',
+      from: 'June 2020',
+      to: 'October 2020',
+      companyLink: 'https://cube-tech.ai',
+    },
+    {
+      company: 'Self-employed',
+      position: 'Freelance Software Engineer',
+      from: 'July 2018',
+      to: 'January 2020',
+      companyLink: '',
     },
   ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
-  educations: [
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
-    },
-  ],
-  publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-  ],
+  certifications: [],
+  educations: [],
+  publications: [],
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
-  },
-  googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-  },
-  // Track visitor interaction and behavior. https://www.hotjar.com
-  hotjar: {
-    id: '',
-    snippetVersion: 6,
+    username: 'getlarge', // to hide blog section, keep it empty
+    limit: 6, // How many articles to display. Max is 10.
+    header: 'Articles',
   },
   themeConfig: {
-    defaultTheme: 'lofi',
-
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
-    disableSwitch: false,
+    // defaultTheme: 'emerald',
+    defaultTheme: 'procyon',
+    // Hides the themes selector in the navbar
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
@@ -223,22 +212,18 @@ const CONFIG = {
 
     // Custom theme, applied to `procyon` theme
     customTheme: {
-      primary: '#fc055b',
+      primary: '#0589fc',
       secondary: '#219aaf',
       accent: '#e8d03a',
       neutral: '#2A2730',
-      'base-100': '#E3E3ED',
-      '--rounded-box': '3rem',
-      '--rounded-btn': '3rem',
+      'base-100': '#ffffff',
+      '--rounded-box': '1rem',
+      '--rounded-btn': '1rem',
     },
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+  footer: `Edouard Maleix ☕️ Vienna, Austria`,
 
   enablePWA: true,
 };
